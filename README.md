@@ -8,7 +8,7 @@ Ce projet implémente un système de gestion des étudiants avec des requêtes S
 - **Consultation de tous les étudiants** (via `SELECT`).
 - **Consultation d'un étudiant par ID**.
 - **Suppression d'un étudiant** (via `DELETE`).
-- **Persistance des données** : les données sont enregistrées dans un fichier CSV (`students.csv`) et rechargées au démarrage.
+
 
 ---
 
