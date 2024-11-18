@@ -1,4 +1,4 @@
-Ce projet implémente un système de gestion des étudiants avec des requêtes SQL de base, utilisant C pour manipuler les données des étudiants stockées dans un fichier CSV et un arbre binaire pour la gestion en mémoire.
+Ce projet implémente un système de gestion des étudiants avec des requêtes SQL de base, utilisant C pour manipuler les données des étudiants stockées dans un fichier CVS et un arbre binaire pour la gestion en mémoire.
 
 ---
 
@@ -25,14 +25,18 @@ mingw32-make
 ./database
 
 Exemple de requêtes SQL
-Ajouter un étudiant :
 
+Ajouter un étudiant :
 INSERT INTO students (id, name, grade) VALUES (1, 'Kiko', 15);
+
 Consulter tous les étudiants :
 SELECT * students;
+
 Consulter un étudiant par ID :
 SELECT FROM students WHERE id = 1;
+
 Supprimer un étudiant :
 DELETE FROM students WHERE id = 1;
+
 Quitter le programme :
 CTRL + C
