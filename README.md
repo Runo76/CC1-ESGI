@@ -1,4 +1,4 @@
-Ce projet implémente un système de gestion des étudiants avec des requêtes SQL de base, utilisant C pour manipuler les données des étudiants stockées dans un fichier TXT.
+Ce projet implémente un système de gestion des étudiants avec des requêtes SQL de base, utilisant C pour manipuler les données des étudiants stockées dans un fichier CSV.
 
 Fonctionnalités
 Ajout d'un étudiant (via INSERT)
@@ -9,15 +9,9 @@ Clonez ce dépôt GitHub sur votre machine locale :
 
 git clone git@github.com:runo76/cc1-ESGI.git
 Lancement
-mingw32-make clean
-mingw32-make
-./database
-
+make
+./program
 Exemple de requête sql
-INSERT INTO students (id, name, grade) VALUES (2, 'Kiko', 10);
+INSERT INTO students (id, name, grade) VALUES (id, 'name', grade);
 SELECT * FROM students;
-SELECT FROM students WHERE id = l'id de l'utilisateur;
 DELETE FROM students WHERE id = l'id de l'utilisateur;
-
-Quitter le programme :
-CTRL + C
