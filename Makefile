@@ -1,18 +1,18 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c11 -g
-SOURCES = main.c repl.c btree.c
-OBJECTS = $(SOURCES:.c=.o)
-EXECUTABLE = database
 
-all: $(EXECUTABLE)
+SRC = main.c commands.c tree.c
+OBJ = $(SRC:.c=.o)
+TARGET = database
 
-$(EXECUTABLE): $(OBJECTS)
-	$(CC) $(CFLAGS) $(OBJECTS) -o $@
+all: $(TARGET)
+
+$(TARGET): $(OBJ)
+	$(CC) $(OBJ) -o $(TARGET)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJECTS) $(EXECUTABLE)
-
-.PHONY: all clean
+	del /f /q $(OBJ) $(TARGET).exe
+	

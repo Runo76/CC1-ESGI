@@ -1,16 +1,21 @@
 #include <stdio.h>
-#include "repl.h"
-#include "btree.h"
+#include <string.h>
+#include "commands.h"
 
-int main(int argc, char* argv[], char* envp[]) {
-    // Initialize the root of the binary tree
-    Node* root = NULL;
+int main() {
+    char query[256];
 
-    // Insert an example value into the tree
-    inser_good(&root, 17);
+    while (1) {
+        printf("db > ");
+        fgets(query, sizeof(query), stdin);
+        query[strcspn(query, "\n")] = 0; // Remove newline character
 
-    // Start the REPL loop
-    repl();
+        if (strcmp(query, ".exit") == 0) {
+            break;
+        }
+
+        execute_command(query);
+    }
 
     return 0;
 }
