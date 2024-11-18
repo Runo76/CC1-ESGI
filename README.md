@@ -17,7 +17,7 @@ Ce projet implémente un système de gestion des étudiants avec des requêtes S
 Clonez ce dépôt GitHub sur votre machine locale :
 
 ```bash
-git clone git@github.com:Runo76/cc1-ESGI.git
+git@github.com:Runo76/CC1-ESGI.git
 Lancement
 Compilez et exécutez le projet :
 mingw32-make clean
