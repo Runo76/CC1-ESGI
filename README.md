@@ -1,4 +1,4 @@
-ANGELOV Onur 3SI2
+ANGELOV Onur 3SI
 Ce projet implémente un système de gestion des étudiants avec des requêtes SQL de base, utilisant C pour manipuler les données des étudiants stockées dans un fichier CVS et un arbre binaire pour la gestion en mémoire.
 
 ---

@@ -35,6 +35,7 @@ void delete_student(int id) {
     printf("Student with ID %d deleted.\n", id);
 }
 
+
 void execute_command(const char* query) {
     if (strncmp(query, "SELECT", 6) == 0) {
         if (strcmp(query, "SELECT * students;") == 0) {

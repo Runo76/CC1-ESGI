@@ -6,7 +6,7 @@
 #define DATABASE_FILE "students.csv"
 
 void insert_student(Student student) {
-    FILE* file = fopen(DATABASE_FILE, "a");
+    FILE* file = fopen("students.csv", "r");
     if (file == NULL) {
         printf("Error: Could not open database file.\n");
         return;
@@ -43,7 +43,7 @@ void select_all_students() {
 
 
 void delete_student(int id) {
-    FILE* file = fopen(DATABASE_FILE, "r");
+    FILE* file = fopen("students.csv", "r");
     if (file == NULL) {
         printf("No students found.\n");
         return;
@@ -83,7 +83,7 @@ void delete_student(int id) {
 }
 
 void select_student_by_id(int id) {
-    FILE* file = fopen(DATABASE_FILE, "r");
+    FILE* file = fopen("students.csv", "r");
     if (file == NULL) {
         printf("No students found.\n");
         return;
